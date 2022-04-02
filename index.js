@@ -500,5 +500,8 @@ new Glider(document.querySelector("#container8 .glider"), {
 });
 
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
