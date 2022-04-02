@@ -1,3 +1,4 @@
+
 *{font-family: 'Montserrat', sans-serif;
 }
 #parent
@@ -5,7 +6,7 @@
     margin-top:auto;
     height:auto;
     display: flex;
-    width:90%;
+    width:80%;
     margin:auto;
     /* border:1px solid red; */
    
@@ -54,6 +55,7 @@ a{
     width:70%;
     height:auto;
     margin-top:40px;
+    overflow:auto;
     /* border:1px solid rgb(34, 0, 128); */
 }
 #cart{
@@ -61,6 +63,7 @@ a{
     height:auto;
     width:100%;
     display:flex;
+    
     justify-content: space-between;
 
 }
@@ -70,7 +73,7 @@ a{
     width:100px;
 }
 #desc{
-    
+     height:auto;
     width:35%;
     /* border:1px solid firebrick; */
 }
@@ -86,3 +89,29 @@ a{
     /* border:1px solid red; */
     justify-content: space-between;
 }
+#btn{
+    
+   text-align: center;
+   background-color: #e537a9;
+   color:white;
+   font-size: large;
+   font-weight: bold;
+   border:none;
+   border-radius: 5px;
+   height:40px;
+   width:100%;
+   cursor: pointer;
+}
+#payment{
+    border:1px solid black;
+    height:60px;
+    display:flex;
+}
+#logo2{
+    padding-top: 5px;
+    /* border:1px solid red; */
+}
+#text{
+    margin-left:5px;
+}
+

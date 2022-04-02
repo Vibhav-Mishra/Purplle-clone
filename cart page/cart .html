@@ -16,7 +16,8 @@
     
 </style>
 <body>
-    <div id="parent">
+    <!-- right side div -->
+   <div id="parent">
     <div id="child">
         <a id="heading">Available Offers</a>
         <div class="offers">
@@ -37,21 +38,60 @@
     <div id="cart"></div>
     </div>
     </div>
-
+   <!-- left side div -->
    <div id="desc" >
+       <div id="payment">
+           <div id="logo2">
+            <i  style="font-size:50px;" class="fa-solid fa-shield"></i>
+            
+           </div>
+           <div id="text">
+            <a style="font-size:15px;font-weight: bold;">100% Safe Payments</a>
+            <p style="font-size:13px;">Genuine Products | Easy Returns</p>
+           </div>
+           
+           
+       </div>
+    <div >
+        <a>price Details</a>
+
+        
+    </div>
+    <div>
+        <a style="text-align:left">Enetr pincode</a>
+        <input type="text" style="border-right:none;border-top:none;border-left:none; border-bottom-color:#e537a9">
+    </div>
+    <div class="left">
+        <p>coupons</p>
+        <a style="color:#e537a9">APPLY COUPON</a>
+    </div>
     <div class="left">
         <p>Items <a id="count"></a></p>
         <p id="price"></p>
     </div>
     <div class="left">
+        <p>Saving on MRP</p>
+        <p style="color:#e537a9">-$40</p>
+    </div>
+    <div class="left">
         <p >Total</p>
         <p  id="totalPrice"></p>
     </div>
-   
+    
+    
+    
+    
+    <div class="left">
+        <p>you save</p>
+        <p style="color:#e537a9">$40</p>
+    </div>
+    <!-- button to move the next page -->
+   <button id="btn" onclick="window.location.href='payment.HTML'">PLACE ORDER</button>
    </div>
    </div>
 
 </body>
 </html>
-
+<script src="/cart page/data.js"></script>
 <script src="/cart page/cart.js"></script>
+

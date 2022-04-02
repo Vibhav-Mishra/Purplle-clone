@@ -47,7 +47,7 @@ function appendData(arr, index) {
 
         var p1 = document.createElement("p");
         
-        p1.textContent = "Delete";
+        p1.textContent = "Remove";
         p1.style.cursor="pointer"
         p1.addEventListener("click", () => {
             arr.splice(index, 1);
