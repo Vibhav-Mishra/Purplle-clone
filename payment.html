@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/payment.css">
+
+</head>
+<body>
+    
+  <form class="con1">
+      <div id="ris">
+        
+    <div>
+        <h4>Credit/Debit Card</h4>
+    </div>
+   <div class="inputsize">
+       <input type="text" id="name" id="sizing" placeholder="Name on Card">
+   </div>
+
+   <div class="inputsize2">
+    <input id="cardno" type="number" id="number" placeholder="Card Number">
+   <!-- </div> -->
+
+   <!-- <div class="inputsize"> -->
+    <input type="number" id="cvv" placeholder="CVV">
+   </div>
+
+   <div class="inputsize3">
+    <input type="number" id="mm" placeholder="Expiry MM">
+    <input type="number" id="yy" placeholder="Expiry YY">
+    </div>
+
+    <div class="inputsize4">
+        <input type="checkbox" id="tick" name="card" value="card">
+        <label for="tick"> Save card for future use</label><br>
+    </div>
+
+    <div class="inputsize1">
+        <h1 id="subsize"> <a href="thankyou.html">Pay Now</a></h1>
+    </div>
+ 
+    <!-- </div> -->
+    </div>
+
+  </form>
+
+  <div id="ris1">
+      <h4>Net Banking</h4>
+      <div id="bank">
+          <img src="https://i0.wp.com/www.logotaglines.com/wp-content/uploads/2016/08/Axis-Bank-Logo.png?resize=400%2C400" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/1200px-SBI-logo.svg.png" alt="">
+          <img src="https://play-lh.googleusercontent.com/C4D7Q0MAAkI5EGIIM34frMuREWlTde55XKb1N-lq9lW8LqALuE5NjONUIIMWHBCtxg" alt="">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGeIcnR-LkMpw/company-logo_200_200/0/1638338279206?e=2147483647&v=beta&t=CF7BKMa877qUEDor-p0xmvNoHjfDe3jDibpxG2Q3Vjo" alt="">
+          <img src="https://www.kibrispdr.org/dwn/4/icon-kotak-png.jpg" alt="">
+      </div>
+
+      <select>
+        <option value="" disabled selected hidden>Chose a bank</option>
+        <option value="">Axis</option>
+        <option value="">SBI</option>
+        <option value="">HDFC</option>
+        <option value="">ICICI</option>
+        <option value="">Kotak</option>
+      </select>
+
+  </div>
+
+  <!-- <div id="ris"> -->
+     
+    <div id="upi">
+
+        <h4>UPI</h4>
+        <input type="radio" value="UPI">
+         <label for="UPI">
+             <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1577193138_bhim-upi.png" alt=""> UPI
+         </label> <br>
+        
+        <input type="radio" value="GPay">
+        <label for="GPay">
+            <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965305_google-pay.png" alt="">Google Pay
+        </label> <br>
+
+
+        <input type="radio" value="Paytm">
+        <label for="Paytm">
+            <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1558704583_paytmupi.png" alt="">Paytm
+        </label>
+
+    </div>
+    <!-- </div> -->
+
+    <div id="COD">
+        <h4>Cash On Delivery</h4>
+      <input type="radio" value="COD">
+       <label for="COD">Pay On Delivery</label>
+    </div>
+
+
+  <!-- </div> -->
+
+</body>
+</html>
+
+<script src="./JS_files/payment.js"></script>

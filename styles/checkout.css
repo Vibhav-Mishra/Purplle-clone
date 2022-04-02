@@ -1,0 +1,61 @@
+body{
+    font-family: aqleema-regular;
+}
+
+form{
+    display: grid;
+    margin-left:30px;
+        
+}
+.main{
+    width: 45%;
+    margin-left:140px;
+    border: 1px solid rgb(209, 207, 207);
+    height:660px;
+    background-color:white
+}
+input{
+    padding-bottom: 30px;
+    margin-top: 5px;
+    margin-right: 80px;
+    height: 30px;
+    border:0px;
+    border-bottom:1px solid rgb(211, 195, 195)
+}
+h3{
+    background-color: rgb(238, 238, 238);
+    width: 101.8%;
+    margin-left: -30px;
+    /* height: 10%; */
+    font-size: large;
+    padding:10px;
+    margin-top: 0px;
+}
+.city{
+    display: flex;
+}
+.city #city{
+    width: 40%;
+}
+.select{
+    display: flex;
+    margin-top: 25px;
+}
+select{
+    /* font-family: aqleema-regular; */
+    font-size:medium;
+    border: none;
+    /* height: 20px; */
+    /* width: 10px; */
+}
+
+#button{
+    margin-left:126px;
+    background-color:#ff147b;
+    color:white;
+    width:300px;
+    height:40px;
+    padding-bottom: 0px;
+    font-size: larger;
+    cursor: pointer;
+}

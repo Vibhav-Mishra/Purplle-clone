@@ -1,0 +1,66 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+h2{
+    margin-left: 30px;
+    padding-top: 25px;
+
+}
+p{
+    color: grey;
+}
+#user{
+    margin-top: 20px;
+}
+form{
+    /* display: grid; */
+    margin-left: 30px;
+    margin-right: 25px;
+}
+#main{
+    width: 34%;
+    position: relative;
+
+    /* min-width: 80%; */
+    /* letter-spacing: 2px; */
+    margin: auto;
+    height: 630px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 35px;
+    
+}
+input{
+    width: 95%;
+    margin-top:  50px;
+    height: 30px;
+    border: 0px;
+    border-bottom:1px solid rgb(211, 195, 195)
+}
+#submit{
+    background-color: #d6377c;
+    margin-top: 20px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: larger;
+    cursor: pointer;
+}
+#backbutton{
+    text-align: center;
+    text-decoration: none;
+}
+#backbutton p{
+    color: #c95889;
+}
+select{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    width: 50%;
+    font-size: larger;
+    cursor: pointer;
+}
+select input{
+    display: flex;
+}
