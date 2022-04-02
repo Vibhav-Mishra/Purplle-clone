@@ -127,3 +127,29 @@ content: icon;
    
     font-size: 40px;
 }
+
+
+
+
+.lowernav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    /* gap: 40px; */
+    font-family: 'PT Serif', serif;
+    font-weight: bolder;
+    margin-left: 60px;
+    /* margin: 20px; */
+}
+
+.ideas{
+    margin-right: 190px;
+}
+.furniture .subdiv{
+    width: 200px;
+}
+.subnav3 .bed{
+    margin-left:  40px;
+}
+/* .subnav4 .subdiv{
+ margin-top: none;
+} */
