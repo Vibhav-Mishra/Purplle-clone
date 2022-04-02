@@ -1,15 +1,15 @@
-const footer=()=>{
+const footer = ()=>{
     return ` <div id="footer">
     <div id="footpart1">
         <div id="footpart1_1">
-            <div>
+            <div class="Fp1_1">
                 <div class="Fp1">
                     <img  alt="secure payments" src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg"/><br>
                     <span>100% Secure Payment</span>
                     <p >All major credit & debit cards accepted.</p>
                 </div>
             </div>
-            <div>
+            <div class="Fp1_1">
                 <div class="Fp1">
                     <a href="https://www.purplle.com/discover/beautyassistant" target="_blank">
                         <img  alt="beauty assistant" src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg"><br>
@@ -382,50 +382,50 @@ const footer=()=>{
             <span class="ff5_1">CONNECT</span>
             <ul id="ilogo">
                 <li>
-                    <a href="http://www.facebook.com/letspurplle" target="_blank">
+                    <a class="bg-fb" href="http://www.facebook.com/letspurplle" target="_blank">
                         
                         <i class="fa fa-facebook-f" style=" font-size:20px;color:#39579a" ></i>
 
                     </a>
                 </li>
                 <li>
-                    <a href="http://twitter.com/letspurplle" target="_blank">
-                    
+                    <a class="bg-tw" href="http://twitter.com/letspurplle" target="_blank">
+                        <!-- <i class="p-social-twitter vam f20"></i> -->
                         <i class="fa fa-twitter" style="font-size:20px;color:#00abf0"></i>
                     </a>
                 </li>
                 <li>
-                    <a  href="https://plus.google.com/+Purplle" target="_blank">
-                       
+                    <a class="bg-yt" href="https://plus.google.com/+Purplle" target="_blank">
+                        <!-- <i class="p-google-plus vam f20 pr l1 t-1"></i> -->
                         <i class="fa fa-google-plus" style="font-size:20px;color:#ed3833"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://in.pinterest.com/letspurplle/" target="_blank">
+                    <a class="bg-pi" href="https://in.pinterest.com/letspurplle/" target="_blank">
             
                         <i class="fa fa-pinterest" style="font-size:20px;color:#cd1d1f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:customercare@purplle.com" target="_blank">
+                    <a class="bg-ml" href="mailto:customercare@purplle.com" target="_blank">
                         
                         <i class="fa fa-envelope" style="font-size:20px;color:#555555"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCI_6AcJI1sKexCLb2NAYTOQ" target="_blank">
+                    <a class="bg-yt" href="https://www.youtube.com/channel/UCI_6AcJI1sKexCLb2NAYTOQ" target="_blank">
                         
                         <i class="fa fa-youtube-play" style="font-size:20px;color:red"></i>
                     </a>
                 </li>
                 <li>
-                    <a  href="https://www.instagram.com/letspurplle/" target="_blank">
+                    <a class="bg-insta" href="https://www.instagram.com/letspurplle/" target="_blank">
             
                         <i class="fa fa-instagram" style="font-size:20px;color:#e91b90"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/2706205?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2706205%2Cidx%3A2-1-2%2CtarId%3A1470066082992%2Ctas%3Apurplle%20" target="_blank">
+                    <a class="bg-in" href="https://www.linkedin.com/company/2706205?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2706205%2Cidx%3A2-1-2%2CtarId%3A1470066082992%2Ctas%3Apurplle%20" target="_blank">
                         <i class="fa fa-linkedin" style="font-size:20px;color:#397db3"></i>
                     </a>
                 </li>
