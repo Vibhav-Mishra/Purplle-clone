@@ -67,12 +67,13 @@ body{
 }
 #style{
     margin-top: 2px;
-
     /* border: 1px solid red; */
     margin-right: 15px;
     display:flex;
+    gap: 15px;
     justify-content:space-evenly;
     height:20px;
+    cursor: pointer;
 }
 
 input{
@@ -170,6 +171,12 @@ content: icon;
     margin-left: 60px;
     /* margin: 20px; */
 }
+.lowernav{
+    
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(216, 212, 212);
+}
 
 .ideas{
     margin-right: 190px;
@@ -180,6 +187,25 @@ content: icon;
 .subnav3 .bed{
     margin-left:  40px;
 }
-/* .subnav4 .subdiv{
- margin-top: none;
-} */
+.furniture{
+ background-color: rgb(243, 236, 236);
+} 
+
+.decor{
+ background-color: rgb(243, 236, 236);
+ margin-right: 100px;
+ display: flex;
+ margin-left: -200px;
+}
+.bed{
+    margin-left: -290px;
+    background-color: rgb(243, 236, 236);
+}
+.home{
+    margin-left: -350px;
+    background-color: rgb(243, 236, 236);
+}
+.kitchen{
+    margin-left: -400px;
+    background-color: rgb(243, 236, 236);
+}
