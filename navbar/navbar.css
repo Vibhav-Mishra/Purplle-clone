@@ -1,7 +1,11 @@
+*{
+    font-family:'Montserrat', sans-serif;;
+}
 body{
     overflow: scroll;
     height:fit-content;
     /* border:solid red; */
+    
 }
 
 #navbar{
@@ -43,6 +47,32 @@ body{
 #feature>div{
     display:flex;
     justify-content:space-around;
+}
+#second{
+    display:flex;
+    height:30px;
+    /* border:1px solid yellowgreen; */
+    justify-content: flex-end;
+    /* text-align: left; */
+}
+#second>div>a{
+   text-align: center;
+  border-right:1.5px solid black;
+    
+    font-size:15px;
+    margin-bottom: 5px;;
+}
+#second>div>a:hover{
+   color: #ff147b;
+}
+#style{
+    margin-top: 2px;
+
+    /* border: 1px solid red; */
+    margin-right: 15px;
+    display:flex;
+    justify-content:space-evenly;
+    height:20px;
 }
 
 input{
