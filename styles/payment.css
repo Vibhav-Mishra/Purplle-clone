@@ -1,3 +1,135 @@
+body{
+    font-family: aqleema-regular;
+    margin-left: -10px;
+}
+
+
+
+#Nav1{
+    display : flex;
+    justify-content: space-around;
+    /* border : 1px solid; */
+    background-color: #f9d3e8;
+    height : 60px;
+    width : 110%;
+    margin-top: -7px;
+
+}
+#Nav1_div {
+    display : flex; 
+    justify-content: center;
+    align-items: center;
+}
+#Nav1_div > div {
+    display : flex; 
+    /* margin-top : 8px; */
+    border: 2px dashed #ff147b;
+    /* margin-left: 8px; */
+    height: 30px;
+    padding : 0px 7px 0px 7px;
+    background-color: white;
+}
+#Nav1_div > img {
+    width : 40px;
+    height : 40px;
+    margin-right: 15px;
+    margin-left  :-70px;
+}
+#GF{
+    margin-right: 10px;
+    color : #6f7d85;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#Nav1_div > div > p {
+    margin-top : 7px;
+    /* font-size: 16px; */
+    color : #6f7d85;
+    font-family: sans-serif;
+}
+#Nav1_div > div > #AF {
+    margin-top : 7px;
+    font-size: 17px;
+    color : #ff147b;
+    font-family: sans-serif;
+    font-weight : bold;
+}
+
+/* For NavBar One Part two */
+#Nav1_div2
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+#Nav1_div2 > button {
+    /* width : 130px; */
+    /* height : 30px; */
+    margin-right: 15px;
+    background-color: #ff147b;
+    padding : 7px 10px 7px 10px;
+    color : white;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    border : none;
+}
+
+#Nav1_div2 > p{
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+/* For Navbar Two */
+#Nav2 {
+    display : flex;
+    height : 60px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 3px;
+    justify-content: space-around;
+    height : 60px;
+    width  :110%;    
+}
+#img_icon > #imgicon1 {
+    height : 55px;
+    margin-top: 3px;
+    margin-left : -43px; 
+}
+#img_icon > #imgicon2 {
+    height : 30px;
+    margin-bottom  : 10px;
+}
+#icon {
+    display : flex;
+    /* border  :1px solid; */
+    margin-top : 10px;
+}
+#icon > i {
+    margin-right : 20px;
+    width:150px
+}
+
+
+
+
+.details{
+    display: flex;
+    gap: 15%;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #container{
     flex-direction: column;
     display: inline-block;
@@ -104,6 +236,8 @@ h1{
     margin: auto;
     padding: 20px;
     margin-top: 20px;
+    margin-left: 70px;
+
 }
 h4{
     background-color: rgb(238, 238, 238);
@@ -141,6 +275,7 @@ select{
     height: 85px;
     margin: auto;
     margin-top: 20px;
+    margin-left: 70px;
 }
 #COD h4{
     width: 96.5%;
@@ -166,7 +301,7 @@ select{
     height: 285px;
     margin: auto;
     margin-top: 20px;
-
+    margin-left: 70px;
 }
 #upi h4{
   width: 96.5%;
