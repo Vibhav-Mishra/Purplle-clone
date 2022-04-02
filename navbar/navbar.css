@@ -1,3 +1,9 @@
+body{
+    overflow: scroll;
+    height:fit-content;
+    /* border:solid red; */
+}
+
 #navbar{
     /* border:1px solid red; */
     display:flex;
