@@ -316,3 +316,11 @@ select{
     margin-left: 30px;
     
 }
+#details{
+    height: auto;
+    width:100%;
+    /* border:1px solid red; */
+    display:block;
+    margin-top: 25px;;
+   
+}
