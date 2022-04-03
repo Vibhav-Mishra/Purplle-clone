@@ -87,7 +87,7 @@ btn.addEventListener("click",function(){
 
 function addtocart(element){
   
-
+let cart=[]
   // console.log(element)
 
 let img=element.image;
@@ -111,10 +111,10 @@ let name=element.name;
   price:price,
   image:img
  }
+ cart.push(obj)
 
-
-console.log(obj);
- localStorage.setItem("Add",JSON.stringify(obj))
+// console.log(obj);
+ localStorage.setItem("Add",JSON.stringify(cart))
 
 }
 

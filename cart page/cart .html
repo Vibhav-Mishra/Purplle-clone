@@ -32,10 +32,8 @@
              <a>Apply coupon code WELCOME to your cart and choose your free gift above 750 Rs. </a>
              <a href="homepage" style="color:#e537a9">T&C/view products</a>
     </div>
-    
+    <p id="heading">My Cart</p>
    <div id="cartItems">
-    <a id="heading">My Cart</a>
-    <div id="cart"></div>
     </div>
     </div>
    <!-- left side div -->
@@ -49,45 +47,202 @@
             <a style="font-size:15px;font-weight: bold;">100% Safe Payments</a>
             <p style="font-size:13px;">Genuine Products | Easy Returns</p>
            </div>
-           
-           
-       </div>
+           </div>
     <div >
         <a>price Details</a>
-
-        
     </div>
     <div>
         <a style="text-align:left">Enetr pincode</a>
         <input type="text" style="border-right:none;border-top:none;border-left:none; border-bottom-color:#e537a9">
     </div>
+  
+        <div class="left">
+            <p>Items <span id="count"></span> </p>
+            <p id="price"></p>
+        </div>
+        <div class="left">
+            <p class="bold">Purpple Offers</p>
+            <p>-$0.00</p>
+        </div>
+        <div class="left">
+            <p class="bold">Shipping</p>
+            <p class="bold">Free</p>
+        </div>
+        <div class="left border-bottom">
+            <p class="bold">Estimated Tax,SurChrages & Fees</p>
+            <p id="extra">3.53</p>
+        </div>
+        <div class="left">
+            <p class="bold">Total</p>
+            <p class="bold" id="totalPrice"></p>
+        </div>
+        <h3>You're Saving $20.20</h3>
+        <div class="left">
+                <p>Saving on MRP</p>
+                <p style="color:#e537a9">-$40</p>
+            </div>
+    
     <div class="left">
-        <p>coupons</p>
-        <a style="color:#e537a9">APPLY COUPON</a>
-    </div>
-    <div class="left">
-        <p>Items <a id="count"></a></p>
-        <p id="price"></p>
-    </div>
-    <div class="left">
-        <p>Saving on MRP</p>
-        <p style="color:#e537a9">-$40</p>
-    </div>
-    <div class="left">
-        <p >Total</p>
-        <p  id="totalPrice"></p>
-    </div>
-  <div class="left">
         <p>you save</p>
         <p style="color:#e537a9">$40</p>
     </div>
     <!-- button to move the next page -->
-   <button id="btn" onclick="window.location.href='/checkout.html'">PLACE ORDER</button>
+   <button id="btn" onclick="window.location.href='payment.HTML'">PLACE ORDER</button>
    </div>
-   </div>
+  
 
 </body>
 </html>
-<script src="./data1.js"></script>
+<script src="./data.js"></script>
 <script src="./cart.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+<!-- var data = JSON.parse(localStorage.getItem("shopCart"));
+
+appendData(data);
+
+function appendData(arr, index) {
+    var mainDiv = document.getElementById("leftside");
+    mainDiv.innerHTML = null;
+
+    arr.forEach((elem) => {
+        var main = document.createElement("div");
+
+        // main.setAttribute("class","left")
+        // main.setAttribute("class","main")
+        main.classList.add("flex", "main");
+        var imgDiv = document.createElement("div");
+        imgDiv.setAttribute("class", "img");
+        var img = document.createElement("img");
+        img.src = elem.image;
+        img.setAttribute("width", "100px");
+        img.setAttribute("height", "100px");
+
+        var p = document.createElement("p");
+        p.setAttribute("class", "end");
+        p.textContent = "sale price";
+
+        var price = document.createElement("p");
+        price.textContent = elem.saleP;
+        price.setAttribute("class", "end");
+        /////////////
+
+        imgDiv.append(img, p, price);
+
+        var content = document.createElement("div");
+
+        content.setAttribute("class", "content");
+
+        var name = document.createElement("p");
+        name.setAttribute("class", "head");
+        name.textContent = elem.name;
+
+        var size = document.createElement("p");
+
+        size.textContent = "Size :";
+        var b1 = document.createElement("b");
+        b1.textContent = elem.size;
+        size.append(b1);
+
+        // var color=document.createElement("p")
+        // color.textContent="color :"
+        // var b2=document.createElement("b")
+        // b2.textContent=elem.color
+        // color.append(b2)
+        //////////////////
+
+        content.append(name, size);
+        ////////////////////////
+
+        main.append(imgDiv, content);
+
+        var saveDiv = document.createElement("div");
+
+        // saveDiv.setAttribute("class","flex")
+        console.log(saveDiv.getAttribute("class"));
+        // saveDiv.setAttribute("class","second")
+        saveDiv.classList.add("flex", "second");
+
+        var h4 = document.createElement("h4");
+        h4.textContent = "Save for later";
+
+        var p1 = document.createElement("p");
+
+        p1.textContent = "Delete";
+
+        p1.addEventListener("click", () => {
+            arr.splice(index, 1);
+            localStorage.setItem("shopCart", JSON.stringify(arr));
+            appendData(arr);
+            totalPrice(arr);
+        });
+        var p2 = document.createElement("p");
+
+        p2.textContent = "-";
+
+        if (elem.quant > 1) {
+            p2.addEventListener("click", () => {
+                elem.quant--;
+                localStorage.setItem("shopCart", JSON.stringify(arr));
+                appendData(arr);
+                totalPrice(arr);
+            });
+        }
+        var p3 = document.createElement("p");
+
+        p3.textContent = elem.quant || 1;
+
+        var p4 = document.createElement("p");
+
+        p4.textContent = "+";
+
+        p4.addEventListener("click", () => {
+            elem.quant = +p3.textContent + 1;
+            localStorage.setItem("shopCart", JSON.stringify(arr));
+            appendData(arr);
+            totalPrice(arr);
+        });
+        ///////////////
+
+        saveDiv.append(h4, p1, p2, p3, p4);
+
+        mainDiv.append(main, saveDiv);
+    });
+}
+
+function totalPrice(arr) {
+    var itemCOunt = document.getElementById("count");
+
+    itemCOunt.textContent = data.length;
+
+    total(arr);
+
+    function total(arr) {
+        var total = 0;
+        arr.forEach((elem) => {
+            var sp = Number(elem.saleP.replace("$", ""));
+            if (elem.quant) total += sp * +elem.quant;
+            else total += +elem.saleP;
+        });
+        var price = document.getElementById("price");
+        price.textContent = "$   " + total + ".00";
+
+        var totalPrice = document.getElementById("totalPrice");
+
+        totalPrice.textContent =
+            "$ " + (total + +document.getElementById("extra").textContent);
+    }
+}
+
+document.querySelector("#cont-shop").addEventListener("click", function () {
+    location.href = "/product_view_page/product_view.html";
+}); -->
