@@ -86,20 +86,6 @@ let shop_by_ingredients = [
 localStorage.setItem("shop_by_ingredients" , JSON.stringify(shop_by_ingredients))
 
 
-// let shop_by_ingredients = [
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479698_lemon_.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479697_green-tea.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479699_orange.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479697_charcoal.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479700_tea-tree.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479700_rosehip.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479701_vitamin-c.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479699_papaya.jpg"} ,
-//   {image:"https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max,pr-true/mediafiles/ecomm/misc/1648479695_aloevera.jpg"} 
-// ]
-
-// localStorage.setItem("shop_by_ingredients" , JSON.stringify(shop_by_ingredients))
-
 
 
 let shop_by_concerns = [
@@ -189,35 +175,6 @@ let top_picks_for_you = [
 localStorage.setItem("top_picks_for_you" , JSON.stringify(top_picks_for_you))
 
 
-// let best_sellers = [
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/182497/maybelline-new-york-fit-me-matte-poreless-liquid-foundation-tube-115-ivory-18-ml_8_display_1610370201_a8313c45.jpg" ,
-//   name : "Maybelline New York Fit Me Matte+Poreless Liquid Foundation Tube - Ivory 115 (18 ml)" ,
-//   price : "239"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/267303/good-vibes-radiant-glow-face-serum-rose-hip-10-ml-1_9_display_1622726784_d6d13626.jpg" ,
-//   name : "Good Vibes Rosehip Radiant Glow Face Serum | Light, Non-Sticky, Brightening | With Vitamin E | No Parabens, No Sulphates, No Animal Testing (10 ml)" ,
-//   price : "173"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/278278/garnier-bright-complete-vitamin-c-uv-serum-cream-uv-23-g-10_7_display_1645004300_9514f14d.jpg" ,
-//   name : "Garnier Bright Complete VITAMIN C UV Serum Cream UV (23 g)" ,
-//   price : "74"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/233008/good-vibes-vitamin-c-and-b3-skin-glow-face-serum-10-ml_10_display_1629869821_c63a7bdf.jpg" ,
-//   name : "Good Vibes Vitamin C & B3 Skin Glow Face Serum | With Orange | Easy Absorption | No Parabens, No Silicones, No Sulphates, No Animal Testing (10 ml)" ,
-//   price : "168"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/256685/neutrogena-ultra-sheer-spf50-30ml-20-21-20_10_display_1632315208_e253acd7.jpg" ,
-//   name : "Neutrogena Ultra Sheer Dry-Touch Sunblock SPF 50+ Ultra Light Clean Feel (30 ml)" ,
-//   price : "250"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/249728/good-vibes-brightening-face-wash-papaya-120-ml_6_display_1620453029_e89fdd73.jpg" ,
-//   name : "Good Vibes Papaya Brightening Face Wash | Deep Pore Cleansing, Non-Drying | With Mulberry | No Parabens, No Mineral Oil, No Animal Testing (120 ml)" ,
-//   price : "160"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/278580/garnier-color-naturals-nourishing-permanent-hair-colour-cream-darkest-brown-3-10-19_11_display_1648446782_9443401b.jpg" ,
-//   name : "Garnier Color Naturals Creme hair color, Shade 3 Darkest Brown, 70ml + 60g" ,
-//   price : "157"} ,
-//   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/272885/ny-bae-kohl-black-the-big-apple-of-my-eye_5_display_1630922214_c9e766bb.jpg" ,
-//   name : "Ny Bae The Big Apple Of My Eye Kohl Stick| Bold Kajal| High Pigmentation| Long Lasting| Single Smooth Stroke- Black (0.25 g)" ,
-//   price : "99"} ,
-// ]
-
-// localStorage.setItem("best_sellers" , JSON.stringify(best_sellers))
-
 
 let currently_trending = [
   {image : "https://media6.ppl-media.com/tr:h-250,w-250,c-at_max/static/img/product/182497/maybelline-new-york-fit-me-matte-poreless-liquid-foundation-tube-115-ivory-18-ml_8_display_1610370201_a8313c45.jpg" ,
@@ -247,28 +204,3 @@ let currently_trending = [
 ]
 
 localStorage.setItem("currently_trending" , JSON.stringify(currently_trending))
-
-
-
-
-
-
-// store.map(function (element) {
-//   var div = document.createElement("div");
-//   div.setAttribute("class", "card");
-//   var img = document.createElement("img");
-//   img.setAttribute("class", "card-img");
-//   img.setAttribute("src", element.image);
-//   div.append(img);
-//   document.querySelector("#container2 .glider").append(div);
-// });
-
-// new Glider(document.querySelector("#container2 .glider"), {
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   draggable: true,
-//   arrows: {
-//     prev: "#container2 .glider-prev",
-//     next: "#container2 .glider-next",
-//   },
-// });
