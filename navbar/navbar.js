@@ -1,5 +1,5 @@
 const data=()=>{
-    return` <div id="top">
+    return ` <div id="top">
     <div>
         <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="">
         <p >⭐⭐Get Flat 10% Off up to Rs.150⭐⭐</p>
