@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.search-bar-sm{
+    display: none;
+}
+.burger{
+    display: none;
+}
+
+
+
+hr{
+    border-color: rgb(248, 246, 246);
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+}
+.subdiv div a{
+    font-size: 14px;
+    color:gray;
+    line-height:1.8;
+}
+.subdiv{
+    text-align: left;
+}
+.subdiv div{
+    padding-left: 12px ;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: white;
+    top:0;
+}
+.navlink :hover{
+    font-size: 15px;
+    /* background-color: pink; */
+}
+ .lowernav{
+    width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     background-color: white;
+     /* border: 1px solid red; */
+}
+
+
+.lowernav{
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+.lowernav>div{
+    padding: 6px;
+}
+
+.lowernav .subdiv>div:hover,.lowernav .subdiv>p:hover{
+     text-decoration: underline;
+}
+
+.furniture,.rugs,.decor,.bed,.home,.kitchen,.outdoor,.jewelry,.lighting,.kids,.more,.ideas{
+    display: none;
+}
+.lowernav>div:hover{
+    border-bottom: 2px solid black;
+    background-color: pink;
+}
+
+/*.subnav1,.subnav2,.subnav3,.subnav4,.subnav5,.subnav6,.subnav7,.subnav8,.subnav9,.subnav10,.subnav11,.subnav12,.subnav13{
+    position: relative;
+}*/
+.subnav1:hover .furniture, .subnav2:hover .rugs,.subnav3:hover .decor,.subnav4:hover .bed, .subnav5:hover .home, .subnav6:hover .kitchen, .subnav7:hover .outdoor,.subnav8:hover .jewelry,.subnav9:hover .lighting,.subnav10:hover .kids,.subnav11:hover .more{
+    width: 55%;
+    position: absolute;
+    z-index: 9;
+    margin-top: 9px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /*grid-template-rows: repeat(2,280px);*/
+    column-gap: 20px;
+    row-gap: 10px;
+    /* background-color: pink; */
+}
+.subnav6:hover .kitchen, .subnav7:hover .outdoor,.subnav8:hover .jewelry,.subnav9:hover .lighting,.subnav10:hover .kids,.subnav11:hover .more{
+    right: 3%;
+    /* background-color: pink; */
+}
+.subnav12:hover .ideas{
+    width:55%;
+    position: absolute;
+    z-index: 9;
+    right: 5%;
+    margin-top: 9px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: white;
+}
+.ideas div img,.sales div img{
+    width: 100%;
+}
+.ideas div p{
+    padding: 0px;
+    color: gray;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.ideas div{
+    border: 1px solid rgb(218, 214, 214);
+}
+.sales>div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 65px;
+    background-color: rgb(235, 238, 238);
+    grid-area: 1/1/span 1/span 4;
+    margin-top: 15px;
+    border: none;
+    padding: 0px 30px;
+}
+.sales>div:first-child div{
+    border: none;
+}
+.sales{
+    display: none;
+}
+.subnav13:hover .sales{
+    width: 60%;
+    position: absolute;
+    z-index: 9;
+    right: 2%;
+    margin-top: 9px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+    background-color: white;
+}
+.sales div{
+    border: 1px solid rgb(235, 232, 232);
+    padding-bottom: 5px;
+}
+.sales div p{
+    padding: 0px;
+    padding-left: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sub-nav1{
+    display: none;
+}
+.nav-list li:hover .sub-nav1{
+    display: contents;
+
+}
+.main-link>.cropped{
+    height: 85px;
+    width: 220px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.main-link>.cropped>img{
+    margin: -55px 0px 70px 10px;
+}
