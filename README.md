@@ -3,8 +3,8 @@ About -: Purplle is an online store selling cosmetics, fragrances, skin, and hai
 It gives an online space to beauty and wellness needs that showcases some of the beauty brands and products.
 Purplle aims to take shopping experience to a different level. 
 Purplle was founded in 2011 and is headquartered in Mumbai, Maharashtra, India.
-.
-.
+.....TEAM WORK  =
+   
 1- Vibhav Kumar Mishra ( Login signup page , checkout page, payment page & GitHub management),
 2- Aditya Kumar ( Header & cart page),
 3-Jagrati Rawat ( Footer),
