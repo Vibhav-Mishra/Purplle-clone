@@ -42,7 +42,7 @@ const navbar =()=>{
             </div>
             
             <div>
-                <i onclick="window.location.href='cart.html' "class="fa-solid fa-cart-arrow-down"></i>
+                <i onclick="window.location.href='http://127.0.0.1:5500/cart%20.html' "class="fa-solid fa-cart-arrow-down"></i>
             </div>
             
         </div>
