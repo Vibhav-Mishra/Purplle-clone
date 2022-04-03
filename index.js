@@ -81,9 +81,12 @@ btn.addEventListener("click",function(){
   Big_div.append(div,content_div,btn)
 
   document.querySelector("#container .glider").append(Big_div);
+
 });
 
 // let cart = JSON.parse(localStorage.getItem("Add")) || [];
+
+
 var cart=[]
 function addtocart(element){
   
@@ -94,6 +97,8 @@ let img=element.image;
 let price=element.price;
 let name=element.name;
 
+
+  
 
   // let img = document.getElementById("image").src;
 
@@ -115,6 +120,7 @@ let name=element.name;
 
 // console.log(obj);
  localStorage.setItem("Add",JSON.stringify(cart))
+window.location.href="product.html"
 
 }
 

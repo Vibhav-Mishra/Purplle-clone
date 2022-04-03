@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/9d6433328b.js"crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./navbar/style.css">
+  
     <style>
         #con{
             display: flex;
@@ -161,6 +166,9 @@ a:active {
     </style>
   </head>
   <body>
+    <div id="main-nav">
+
+    </div>
     <div id="con">
       <div id="imgpart">
           <div id="simg">
@@ -222,7 +230,14 @@ a:active {
     </div>
   </body>
 </html>
-<script>
+<script type="module">
+
+import navbar from "./navbar/navbar.js"
+
+document.getElementById("main-nav").innerHTML=navbar();
+
+
+
   var cartArr=JSON.parse(localStorage.getItem("Add"))
   //  console.log(cartArr)
   cartArr[0].quant=1
