@@ -84,10 +84,10 @@ btn.addEventListener("click",function(){
 });
 
 // let cart = JSON.parse(localStorage.getItem("Add")) || [];
-
+var cart=[]
 function addtocart(element){
   
-let cart=[]
+
   // console.log(element)
 
 let img=element.image;

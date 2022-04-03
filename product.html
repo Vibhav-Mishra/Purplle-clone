@@ -224,7 +224,7 @@ a:active {
 </html>
 <script>
   var cartArr=JSON.parse(localStorage.getItem("Add"))
-  //  console.log(cartArr[0])
+  //  console.log(cartArr)
   cartArr[0].quant=1
   // console.log(cartArr)
 var money=document.getElementById("span2")
@@ -240,17 +240,21 @@ var simage2=document.getElementById("b")
 var simage3=document.getElementById("c")
 var simage4=document.getElementById("d")
 
-function getIt(cartArr){pr
-  money.innerText=cartArr.price  
-        namee.innerText=cartArr.name
-        imagee.src=cartArr.image
-        simage1.src=cartArr.image
-        simage2.src=cartArr.image
-        simage3.src=cartArr.image
-        simage4.src=cartArr.image
-}
 
-getIt(cartArr)
+  console.log(cartArr)
+  cartArr.map(function(ele){
+    money.innerText=ele.price  
+        namee.innerText=ele.name
+        imagee.src=ele.image
+        simage1.src=ele.image
+        simage2.src=ele.image
+        simage3.src=ele.image
+        simage4.src=ele.image
+  })
+  
+
+
+// console.log(cartArr)
 var CARTpage=JSON.parse(localStorage.getItem("addtocart")) || []
 // console.log(cartArr[0])
 
@@ -267,6 +271,7 @@ function gotocart(){
   
     CARTpage.push(cartArr[0])
   console.log(CARTpage)
+
   localStorage.setItem("addtocart",JSON.stringify(CARTpage))
   
   }
