@@ -5,10 +5,12 @@ var data = JSON.parse(localStorage.getItem("addtocart"));
 appendData(data);
 
 function appendData(arr, index) {
-      
+    console.log(arr)
+    
     var mainDiv = document.getElementById("cartItems")
     mainDiv.innerHTML=null;
     arr.forEach((elem) => {
+       
       
      let cart=document.createElement("div");
      cart.id="cart"
@@ -28,6 +30,7 @@ function appendData(arr, index) {
         let price = document.createElement("p");
         price.id="price"
         price.textContent = elem.price
+         
 
         
 
@@ -37,7 +40,10 @@ function appendData(arr, index) {
         ////////////////////////
 
         main.append(img,name1,price);
-
+//     cart.append(main)
+//     mainDiv.append(cart)
+//     });
+// };
         var saveDiv = document.createElement("div")
         saveDiv.style.display="flex";
         saveDiv.style.justifyContent="space-evenly"
@@ -77,7 +83,7 @@ function appendData(arr, index) {
         p4.textContent = "+";
         p4.style.cursor="pointer"
         p4.addEventListener("click", () => {
-            elem.quant = +p3.textContent + 1;
+            elem.quant = +p3.innerText + 1;
             localStorage.setItem("addtocart", JSON.stringify(arr));
             appendData(arr);
             totalPrice(arr);
@@ -87,7 +93,7 @@ function appendData(arr, index) {
         saveDiv.append(h4, p1, p2, p3, p4);
         cart.append(main, saveDiv)
         mainDiv.append(cart);
-        console.log(elem.quant)
+      
 
 
         // document.getElementById("cart").append(mainDiv)
@@ -106,13 +112,14 @@ function totalPrice(arr) {
          
     total(arr);
     function total(arr) {
+        
         var total = 0;
      
     console.log(arr.quant)
         arr.forEach((elem) => {
             
             var sp = elem.price;
-            if (elem.quant>1) total= sp *+elem.quant;
+            if (elem.quant>1) total= sp*elem.quant;
             else total += +elem.price;
            
         });

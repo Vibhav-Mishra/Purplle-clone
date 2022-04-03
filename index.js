@@ -83,34 +83,38 @@ btn.addEventListener("click",function(){
   document.querySelector("#container .glider").append(Big_div);
 });
 
-let cart = JSON.parse(localStorage.getItem("Add")) || [];
+// let cart = JSON.parse(localStorage.getItem("Add")) || [];
 
 function addtocart(element){
   
 
-  console.log(element)
+  // console.log(element)
+
+let img=element.image;
+let price=element.price;
+let name=element.name;
 
 
-  let img = document.getElementById("image").src;
+  // let img = document.getElementById("image").src;
 
 
-  let p = document.getElementById("name").innerText;
+  // let p = document.getElementById("name").innerText;
 
-  let price = document.getElementById("price").innerText;
+  // let price = document.getElementById("price").innerText;
 
 
   
 
  let obj = {
 
-  name :p,
+  name :name,
   price:price,
   image:img
  }
-cart.push(obj)
 
-console.log(cart)
- localStorage.setItem("Add",JSON.stringify(cart))
+
+console.log(obj);
+ localStorage.setItem("Add",JSON.stringify(obj))
 
 }
 

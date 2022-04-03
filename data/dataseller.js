@@ -204,3 +204,5 @@ let currently_trending = [
 ]
 
 localStorage.setItem("currently_trending" , JSON.stringify(currently_trending))
+
+
