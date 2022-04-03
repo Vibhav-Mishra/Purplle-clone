@@ -111,13 +111,16 @@ body{
 
 
 
-
-.details{
+ 
+ .details{
     display: flex;
     gap: 15%;
     padding-right: 5%;
     padding-top: 10px;
-}
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+} 
 
 
 
@@ -136,7 +139,7 @@ body{
 
     margin: auto;
     margin-left: 200px;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 .con1{
     width: 80%;

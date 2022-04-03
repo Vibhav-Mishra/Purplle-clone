@@ -10,10 +10,13 @@
 
     <link rel="stylesheet" href="./navbar/navbar.css">
     <link rel="stylesheet" href="./navbar/style.css">
+    <link rel="stylesheet" href="./Footer/footer.css">
+    
   
     <style>
         #con{
             display: flex;
+            height: 1000px;
         }
       #imgpart {
         width: 58%;
@@ -228,8 +231,11 @@ a:active {
           </div>
       </div>
     </div>
+
+    <div id="foot"></div>
   </body>
 </html>
+<script src="./Footer/footer.js"></script>
 <script type="module">
 
 import navbar from "./navbar/navbar.js"
@@ -237,6 +243,9 @@ import navbar from "./navbar/navbar.js"
 document.getElementById("main-nav").innerHTML=navbar();
 
 
+import footer from "/footer_export.js"
+
+document.getElementById("foot").innerHTML=footer()
 
   var cartArr=JSON.parse(localStorage.getItem("Add"))
   //  console.log(cartArr)

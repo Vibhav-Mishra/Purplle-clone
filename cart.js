@@ -128,11 +128,17 @@ function totalPrice(arr) {
         totalPrice.textContent =
             "$ " + (total + +document.getElementById("extra").textContent);
 
+            var price = total;
+            // var price1 = Number(price.replace("$", ""));
 
-            localStorage.setItem("pay1",JSON.stringify(totalPrice));
+            localStorage.setItem("pay1",(price))
 
+            
     }
+    
+
 }
+
 
 
 
