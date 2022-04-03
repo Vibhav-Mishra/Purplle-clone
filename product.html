@@ -240,16 +240,14 @@ var simage2=document.getElementById("b")
 var simage3=document.getElementById("c")
 var simage4=document.getElementById("d")
 
-function getIt(cartArr){
-    cartArr.map(function(ele){
-        money.innerText=ele.price  
-        namee.innerText=ele.name
-        imagee.src=ele.image
-        simage1.src=ele.image
-        simage2.src=ele.image
-        simage3.src=ele.image
-        simage4.src=ele.image
-    })
+function getIt(cartArr){pr
+  money.innerText=cartArr.price  
+        namee.innerText=cartArr.name
+        imagee.src=cartArr.image
+        simage1.src=cartArr.image
+        simage2.src=cartArr.image
+        simage3.src=cartArr.image
+        simage4.src=cartArr.image
 }
 
 getIt(cartArr)
